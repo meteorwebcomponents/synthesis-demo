@@ -1,12 +1,23 @@
-Polymer({
-  is:"test-element",
-  behaviors:[mwcMixin], //reactive data source mwc:mixin
-  getMeteorData:function(){
+class testElement extends Polymer.Class(
+  {
+    is: "test-element",
+    behaviors:[mwcMixin],
+    properties:{
+      status:{
+        type:Object
+      },
+      counter:{
+        type:Number,
+        value:0
+      }
+    }    }
+){
+  getMeteorData(){
     this.set("status",Meteor.status().status);
-  },
-  properties:{
-    status:{
-      type:Object
-    }
   }
-})
+  increment(){
+    this.counter++;
+  }
+};
+
+document.registerElement(testElement.prototype.is, testElement);
