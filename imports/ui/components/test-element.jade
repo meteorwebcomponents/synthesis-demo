@@ -1,0 +1,15 @@
+html
+  body
+    link(rel='import', href='../bower_components/paper-button/paper-button.html')
+    dom-module#test-element
+      template
+        style.
+          paper-button{
+          color:blue;
+          }
+        .layout.vertical.center.center-justified
+          div status : {{status}}
+          paper-button(raised='', on-tap='increment') Click Me
+          |     You've pressed the button [[counter]] times.
+    script(src='test-element.js')
+

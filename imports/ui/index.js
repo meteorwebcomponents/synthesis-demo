@@ -17,4 +17,4 @@ import "./bower_components/paper-styles/paper-styles.html";
 
 
 import "./layouts/test-layout.html";
-import "./components/test-element.html";
+import "./components/test-element.jade";

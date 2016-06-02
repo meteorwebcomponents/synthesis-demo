@@ -46,7 +46,9 @@ modules-runtime@0.6.3
 mongo@1.1.7
 mongo-id@1.0.4
 mwc:mixin@1.0.15
-mwc:synthesis@1.0.22
+mwc:synthesis@1.0.26
+mwc:synthesis-compiler@1.0.26
+mwc:synthesis-jade@1.0.26
 npm-mongo@1.4.43
 observe-sequence@1.0.11
 ordered-dict@1.0.7
