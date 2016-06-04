@@ -1,3 +1,5 @@
+import { Template } from 'meteor/mwc:blaze-templating';
+
 class testElement extends Polymer.Class(
   {
     is: "test-element",

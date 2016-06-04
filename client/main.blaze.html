@@ -1,0 +1,34 @@
+<head>
+  <title>Synthesis</title>
+</head>
+<template name="hello">
+  <div class="layout vertical center center-justified">
+    <h3> Using Blaze </h3>
+    <button>Click Me</button>
+    <p>You've pressed the button {{counter}} times.</p>
+  </div>
+</template>
+
+<body class="fullbleed">
+<style is="custom-style">
+.main{
+  background:#eee;
+}
+.title{
+  color:#666;
+
+}
+h3{
+text-decoration: underline;
+}
+    </style>
+    <div class="main fit layout main vertical center center-justified">
+      <h1 class="title">Synthesis is Meteor + Polymer!</h1>
+      <div class="layout vertical center center-justified">
+        <h3>Using Polymer</h3>
+        <test-element></test-element>
+        {{> hello}}
+      </div>
+    </div>
+</body>
+
