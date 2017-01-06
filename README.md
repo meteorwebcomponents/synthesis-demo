@@ -15,3 +15,4 @@ Installing bower components (imports/ui/bower_components)
 ```sh
 ./bower.sh install --save PolymerElements/iron-icon
 ```
+
